@@ -44,9 +44,16 @@ public class Exercise4 {
 
     public static String cambioFrase(String frase, String x, String y) {
 
-        x = x.toUpperCase();
-        y = y.toUpperCase();
-        String nuevaFrase = frase.toUpperCase().replaceAll(x, y);
+        String nuevaFrase = "";
+        x = x.toLowerCase();
+        y = y.toLowerCase();
+
+        for (int i = 0; i < frase.length(); i++) {
+
+
+
+        }
+
 
         return nuevaFrase;
     }

@@ -40,14 +40,20 @@ public class Exercise3 {
 
         System.out.println();
 
+        if (limiteDer < limiteIzq) {
+            return ;
+        }
+
         System.out.println("La nueva frase es: " + nuevoString(frase,limiteDer, limiteIzq));
     }
 
     public static String nuevoString(String frase, int limiteDer, int limiteIzq) {
 
-        String substring;
+        String substring = "";
 
-        substring = frase.substring(limiteIzq, limiteDer + 1);
+        for (int i = limiteIzq; i <= limiteDer; i++) {
+            substring += frase.charAt(i);
+        }
 
         return substring;
     }

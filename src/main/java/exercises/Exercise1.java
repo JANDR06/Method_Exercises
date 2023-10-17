@@ -37,7 +37,7 @@ public class Exercise1 {
                 aux += frase.charAt(i);
         }
 
-        for (int i = 0; i < frase.length() - 1; i++) {
+        for (int i = 0; i < frase.length(); i++) {
 
             if (frase.charAt(i) == aux.charAt(i)) {
                 esPalindrome = true;

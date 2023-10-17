@@ -28,14 +28,6 @@ public class Exercise5 {
     }
 
     public static boolean esMayorEdad(int a) {
-        boolean mayorEdad;
-
-        if (a >= 18) {
-            mayorEdad = true;
-        } else {
-            mayorEdad = false;
-        }
-
-        return mayorEdad;
+        return a >= 18;
     }
 }
